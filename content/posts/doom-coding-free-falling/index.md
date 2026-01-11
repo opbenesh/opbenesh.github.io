@@ -4,6 +4,8 @@ draft = false
 title = 'My Unexpected Descent into Doom Coding (or: How I Built a Spotify Tracker App Using My Phone)'
 tags = ['coding', 'spotify', 'ai', 'claude', 'doom-coding', 'python']
 summary = 'How I built a Spotify release tracker on my phone using Claude Code and vibes.'
+ShowToc = true
+TocOpen = true
 +++
 
 Hosting a weekly "new metal" show at [KZRadio](https://www.kzradio.net/shows/esh) (hello, shameless plug) means I have an ever-renewing deadline for finding new stuff to play, and Spotify's own Release Radar misses 70% of the good stuff. I wanted to revitalize my legacy Spotify release tracker project for a while now, but obviously ain't nobody got time for this sort of things these days.
@@ -21,9 +23,25 @@ $ esh-tracker track --artist="Turnstile" --since 2025-10-01
      URL: https://open.spotify.com/...
 ```
 
-And the most surprising thing was that building it was **SO. MUCH. FUN.** The async nature is so perfect for meaningless side-projects like these. I actually vibe-coded at the supermarket and while brushing my teeth. Listen, I love to debate the AI bubble doom scenarios as much as the next guy, but please - you have to try it out. You'll REALLY enjoy it. I promise. I liked it so much I'm writing this blog post at 3am for god's sake.
+And the most surprising thing was that building it was **SO. MUCH. FUN.**
 
-I'm going to write a web version of the tracker one day, but feel free to early-adopt at `pip install esh-tracker` (or just check out the [GitHub repository](https://github.com/opbenesh/esh-tracker)).
+> The async nature is so perfect for meaningless side-projects like these. I actually vibe-coded at the supermarket and while brushing my teeth. Listen, I love to debate the AI bubble doom scenarios as much as the next guy, but please - you have to try it out. You'll REALLY enjoy it. I promise.
+
+I liked it so much I'm writing this blog post at 3am for god's sake.
+
+---
+
+### 🚀 Try It Yourself
+
+I'm going to write a web version of the tracker one day, but feel free to early-adopt:
+
+```bash
+pip install esh-tracker
+```
+
+Or check out the [GitHub repository](https://github.com/opbenesh/esh-tracker).
+
+---
 
 And now - content!
 
@@ -35,9 +53,9 @@ And now - content!
 *   Spin up Claude on your phone, go to the Code tab
 *   Authorize the GitHub integration and pick your repo
 *   Doom code!
-*   Iterate,
+*   Iterate!
 
-    ![Claude Code Interaction](claude-interaction.jpg)
+{{< figure src="claude-interaction.jpg" caption="A typical Claude Code interaction on mobile—reviewing code changes while waiting for the bus." >}}
 
 ## 💡 Doom Coding TIL
 
@@ -58,5 +76,5 @@ And now - content!
 
 ## 📚 Further Reading
 
-* ["Stop Doom Scrolling, Start Doom Coding"](https://github.com/rberg27/doom-coding)
-*   Simon Willison was another major inspiration for this journey - check out ["The year of programming on my phone"](https://simonwillison.net/2025/Dec/31/the-year-in-llms/#the-year-of-programming-on-my-phone) from his excellent 2025 recap.
+1. [**"Stop Doom Scrolling, Start Doom Coding"**](https://github.com/rberg27/doom-coding) — The original article that started this whole adventure.
+2. [**Simon Willison: "The year of programming on my phone"**](https://simonwillison.net/2025/Dec/31/the-year-in-llms/#the-year-of-programming-on-my-phone)  — Simon's 2025 recap includes a fantastic section on mobile-first coding that was a major inspiration.
