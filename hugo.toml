@@ -1,4 +1,4 @@
-baseURL = 'https://opbenesh.github.io/opbenesh-blog/'
+baseURL = 'https://opbenesh.github.io/'
 languageCode = 'en-us'
 title = 'Ben Esh Presents: TIL in Blog Form'
 theme = "PaperMod"

@@ -113,4 +113,4 @@ Happy blogging :)
 
 ---
 
-Feel free to check out my vendor-independent [AGENTS.md](https://github.com/opbenesh/opbenesh-blog/blob/main/AGENTS.md) file!
+Feel free to check out my vendor-independent [AGENTS.md](https://github.com/opbenesh/opbenesh.github.io/blob/main/AGENTS.md) file!
