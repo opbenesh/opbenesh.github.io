@@ -56,7 +56,6 @@ And the most surprising thing was that building it was **SO. MUCH. FUN.** The as
 ## 💡 Doom Coding TIL
 
 *   Optional, but highly recommended: Brainstorm your planned app with your favorite non-coding LLM and ask it to create a spec.
-*   
 *   Keep a `CLAUDE.md` file for instructions. Claude reads it before proceeding, so that's a good place to put important stuff about your project, priorities, and environment. Think of it like the "Our Core Values" document you never opened at your previous job!
 
 *   This is a super async process. Rate limits, bus inspectors asking for that QR code, your stew getting burnt, etc. Keep a `TODO.md` file and ask Claude to update it, so that resuming tasks (perhaps even with another agent or environment) is always easy.
