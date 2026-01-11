@@ -4,11 +4,6 @@ draft = false
 title = 'My Unexpected Descent into Doom Coding (or: How I Built a Spotify Tracker App Using My Phone)'
 tags = ['coding', 'spotify', 'ai', 'claude', 'doom-coding', 'python']
 summary = 'How I built a Spotify release tracker on my phone using Claude Code and vibes.'
-[cover]
-    image = "result-readme.jpg"
-    alt = "Esh Tracker README"
-    caption = "Esh Tracker in action"
-    relative = true
 +++
 
 Hosting a weekly "new metal" show at [KZRadio](https://www.kzradio.net/shows/esh) (hello, shameless plug) means I have an ever-renewing deadline for finding new stuff to play, and Spotify's own Release Radar misses 70% of the good stuff. So I built this over the weekend:
