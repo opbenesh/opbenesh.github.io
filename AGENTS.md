@@ -57,5 +57,50 @@ relative = true
 - Maintain ~8-10px stroke width for icon outlines
 - Test visibility on both light and dark backgrounds (though primarily viewed on dark)
 
+### How to Generate a Cover Photo
+
+Use this prompt template with AI image generators (Claude, DALL-E, Midjourney, etc.):
+
+```
+Create a minimalist banner image for a blog post with these exact specifications:
+
+DIMENSIONS: 1200 pixels wide × 300 pixels tall (4:1 ratio)
+
+BACKGROUND: Solid dark color #0a0a0a (nearly black)
+
+COLOR SCHEME:
+- Primary: Neon green #00ff88 (rgb 0, 255, 136)
+- Background: #0a0a0a (dark/nearly black)
+
+LAYOUT:
+- Left side (starting ~80px from left edge): Icon/graphic
+- Right side (starting ~280px from left): Title text
+
+ICON DESIGN:
+- Simple geometric shapes representing [TOPIC - e.g., "Hugo static site generator and GitHub"]
+- Style: Outlined shapes only (NOT filled), ~8-10px stroke width
+- [SPECIFIC ICON DETAILS - e.g., "Hugo gopher: Circle for head with triangular ears, two dots for eyes"]
+- All lines/shapes in neon green #00ff88
+
+TYPOGRAPHY:
+- Text: "[YOUR TITLE - 2-4 words max, e.g., 'Hugo + GitHub']"
+- Font: Bold, clean sans-serif (like Helvetica Bold or similar)
+- Size: ~100pt
+- Color: Neon green #00ff88
+- Position: Right side of banner, vertically centered
+
+STYLE:
+- Minimalist, flat design
+- Strong contrast
+- Modern tech aesthetic
+- Clean geometric shapes
+- Professional but approachable
+- Terminal/developer vibe
+
+NO gradients, NO shadows, NO textures - keep it flat and clean.
+```
+
+Replace the bracketed sections with your post-specific details.
+
 #### Discoveries
 - **Images**: Prefer Page Bundles (matching the `index.md` location) or the `assets` folder for blog images to support Hugo's image processing, though the `/static` folder remains the default for raw assets.
