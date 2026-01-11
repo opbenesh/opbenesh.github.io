@@ -1,7 +1,7 @@
 +++
 date = '2026-01-11T02:16:16+02:00'
 draft = false
-title = 'My Unexpected Descent into Doom Coding (or: How I Built a Spotify Tracker App Using Only My Phone)'
+title = 'My Unexpected Descent into Doom Coding (or: How I Built a Spotify Tracker App Using My Phone)'
 +++
 
 Hosting a weekly "new metal" show at KZRadio (hello, shameless plug) means I have an ever-renewing deadline for finding new stuff to play, and Spotify's own Release Radar misses 70% of the good stuff. Introducing:
@@ -14,7 +14,7 @@ $ esh-tracker track --artist="Turnstile" --since 2025-10-01
      Released: 2025-11-14
      URL: https://open.spotify.com/...
 ```
-![Esh Tracker README](/images/doom-coding/result-readme.jpg)
+![Esh Tracker README](result-readme.jpg)
 
 Check it out: `pip install esh-tracker` (or check out the gh link in the comments)!
 
@@ -38,7 +38,7 @@ So on Friday morning I created an empty GitHub repo, and after a weekend of vibe
 
 *   Spin up Claude on your phone, go to the Code tab, and feed it your spec.
 
-    ![Claude Code Interaction](/images/doom-coding/claude-interaction.jpg)
+    ![Claude Code Interaction](claude-interaction.jpg)
 
 *   Keep a `CLAUDE.md` file for instructions. Claude reads it before proceeding, so that's a good place to put important stuff about your project, priorities, and environment. Think of it like the "Our Core Values" document you never opened at your previous job!
 
