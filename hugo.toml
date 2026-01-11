@@ -1,14 +1,16 @@
 baseURL = 'https://opbenesh.github.io/'
 languageCode = 'en-us'
-title = 'Ben Esh Presents: TIL in Blog Form'
+title = 'Ben Esh'
 theme = "PaperMod"
+copyright = "© 2026 Ben Esh"
 
 [outputs]
     home = ["HTML", "RSS", "JSON"]
 
 [params.homeInfoParams]
-    Title = "Ben Esh Presents: TIL in Blog Form ☢️"
+    Title = "Ben Esh"
     Content = "Product Manager by day, nostalgic ex-coder by night. This is a collection of things I learned, built, or broke while doom coding."
+    images = ["/favicon.png"]
 
 [[params.socialIcons]]
     name = "linkedin"
@@ -17,6 +19,10 @@ theme = "PaperMod"
 [[params.socialIcons]]
     name = "email"
     url = "/contact"
+
+[[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
 
 [menu]
   [[menu.main]]
@@ -40,6 +46,11 @@ theme = "PaperMod"
     url = "/contact"
     weight = 30
   [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives"
+    weight = 35
+  [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags"
@@ -54,11 +65,18 @@ theme = "PaperMod"
     apple_touch_icon = "apple-touch-icon.png"
 
 [params]
+    description = "Personal blog covering doom coding, side projects, and technical explorations"
     ShowShareButtons = true
     ShowReadingTime = true
     ShowPostNavLinks = true
     ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
+    ShowToc = true
     author = "Ben Esh"
+
+# Open Graph & Twitter Card metadata
+[params.social]
+    twitter = "opbenesh"
 
 [related]
     includeNewer = true
