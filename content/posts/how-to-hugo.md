@@ -24,12 +24,10 @@ gh auth login
 
 Create the directory structure, initialize Git, and **link it to GitHub**. 
 
-> **TIP:** **To get a "Short URL" (e.g., `https://username.github.io/`):** Name your repository exactly `[your-username].github.io`. This is the professional standard for personal blogs.
-
 ```bash
-# Create the site folder (replace [username] with yours)
-hugo new site [your-username].github.io
-cd [your-username].github.io
+# replace [github-username] with your GitHub username
+hugo new site [github-username].github.io
+cd [github-username].github.io
 git init
 
 # Create the repo on GitHub
@@ -49,21 +47,16 @@ echo 'theme = "PaperMod"' >> hugo.toml
 
 Update `hugo.toml` with your specific details. 
 
-> **IMPORTANT:** **The baseURL must match your repository name.** If you named your repo `[username].github.io`, your baseURL is simply the root. If you named it `my-blog`, you MUST include the subpath or your CSS will break.
-
-* **baseURL**: `https://[your-username].github.io/`
+* **baseURL**: `https://[girhub-username].github.io/`
 * **theme**: `PaperMod`
 
-#### **5. Create Your First Post (The "Draft" Trap)**
-
-Hugo won't show anything unless there is content, and it won't publish anything marked as a draft.
+#### **5. Create Your First Post**
 
 ```bash
-# Create the file
 hugo new posts/my-first-post.md
 ```
 
-Open that file and change `draft: true` to **`draft: false`**. If you forget this, your site will be empty after deployment!
+Open that file and change `draft: true` to **`draft: false`**. Also, rememver to feed it actual content at some point!
 
 #### **6. Final Push**
 
@@ -83,6 +76,8 @@ git push -u origin main
 3. Paste the official [Hugo GitHub Action YAML](https://gohugo.io/host-and-deploy/host-on-github-pages/#step-4) into the file.
 4. Navigate to **Settings > Pages** on GitHub.
 5. Change **Build and deployment > Source** to **"GitHub Actions"**.
+
+That's it - you can now interact with your git repo using your favourite local/web IDE. GitHub will automatically publish a new version whenever you `git push`.
 
 ---
 
@@ -109,9 +104,7 @@ Or even better, create a CLAUDE.md file for your blog repo and let it roll:
 - Summaries should be under 160 characters for SEO.
 - Run `hugo server` to validate builds before suggesting a push.
 ```
+Feel free to check out my vendor-independent [AGENTS.md](https://github.com/opbenesh/opbenesh.github.io/blob/main/AGENTS.md) file!
 
 Happy blogging :)
 
----
-
-Feel free to check out my vendor-independent [AGENTS.md](https://github.com/opbenesh/opbenesh.github.io/blob/main/AGENTS.md) file!
