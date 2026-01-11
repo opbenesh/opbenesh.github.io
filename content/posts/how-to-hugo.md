@@ -15,12 +15,6 @@ Open a terminal, install `hugo` and the GitHub CLI (`gh`):
 brew install hugo gh
 ```
 
-**Set up your Git identity** (so your commits are actually linked to you):
-```bash
-git config --global user.name "Your Name"
-git config --global user.email "your-email@example.com"
-```
-
 **Authenticate with GitHub**:
 ```bash
 gh auth login
