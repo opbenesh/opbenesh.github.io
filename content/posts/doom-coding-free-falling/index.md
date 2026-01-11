@@ -1,12 +1,12 @@
 +++
 date = '2026-01-11T02:16:16+02:00'
 draft = false
-title = 'My Unexpected Descent into Doom Coding (or: How I Built a Spotify Tracker App Using My Phone)'
+title = 'My Unexpected Descent into Doom Coding'
 +++
 
 ![Esh Tracker README](result-readme.jpg)
 
-Hosting a weekly "new metal" show at KZRadio (hello, shameless plug) means I have an ever-renewing deadline for finding new stuff to play, and Spotify's own Release Radar misses 70% of the good stuff. Introducing:
+Hosting a weekly "new metal" show at KZRadio ([shameless plug](https://www.kzradio.net/shows/esh)) means I have an ever-renewing deadline for finding new stuff to play, and Spotify's own Release Radar misses 70% of the good stuff. Introducing:
 
 ```bash
 $ esh-tracker track --artist="Turnstile" --since 2025-10-01
@@ -52,7 +52,7 @@ And the most surprising thing was that building it was **SO. MUCH. FUN.** The as
 
 *   One conversation per topic. Start a session, give it a few related tasks, review and merge the PR, and move on. Both you and the agent will concentrate better in this model. Learned anything interesting in this session? Great! Update `CLAUDE.md`.
 
-## Assorted TIL 💡
+## 💡 Assorted TIL
 
 *   Unsuprisingly, auto-approve completely changes the interaction model with these agents. Instead of closesly supervising every `rm`, the whole thing becomes truly async. Which means that...
 *   Figuring out sandboxes is key to all of this, which is why these new container-first services (Claude Code, Google Jules and OpenAI's Codex) are so great. Let's hope they keep underpricing them!
