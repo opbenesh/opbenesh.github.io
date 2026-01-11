@@ -46,16 +46,16 @@ Update `hugo.toml` with your specific details.
 * **baseURL**: `https://[your-github-username].github.io/`
 * **theme**: `PaperMod`
 
-#### **5. Connect to GitHub & Deploy**
+#### **5. Link and Push to GitHub**
 
-Instead of clicking around the GitHub UI, use the CLI to create the repo and link it instantly:
+Now, use the GitHub CLI to create the remote repository and **link it to your local project** instantly:
 
 ```bash
 git add .
 git commit -m "Initial commit"
 git branch -M main
 
-# Create the repo on GitHub and push
+# This command creates the repo on GitHub and sets it as your 'origin' remote
 gh repo create my-blog --public --source=. --remote=origin --push
 ```
 
