@@ -4,15 +4,12 @@ draft = false
 title = 'My Unexpected Descent into Doom Coding (or: How I Built a Spotify Tracker App Using My Phone)'
 tags = ['coding', 'spotify', 'ai', 'claude', 'doom-coding', 'python']
 summary = 'How I built a Spotify release tracker on my phone using Claude Code and vibes.'
-ShowToc = true
-TocOpen = true
 author = 'Ben Esh'
 ShowPostNavLinks = true
 
 [cover]
 image = "cover.png"
 alt = "esh-tracker banner"
-caption = "The esh-tracker app logo"
 relative = true
 +++
 
