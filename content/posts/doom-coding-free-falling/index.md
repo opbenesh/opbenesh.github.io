@@ -24,11 +24,7 @@ Check it out: `pip install esh-tracker` (or check out the gh link in the comment
 
 I wanted to revitalize my legacy Spotify release tracker project for a while now, but unfortunately, when I actually find the time that I'm sitting in front of a real-life MacBook, it's usually on the company's dime.
 
-**THAT ALL CHANGED** when I read a Hacker News article titled "Stop Doom Scrolling, Start Doom Coding" (link in comments) which suggested a remote phone-first vibe coding setup—Claude Code + Tailscale + Android terminal—as a replacement for e.g. checking AP News for the latest political takeovers.
-
-But if I'm already vibe coding, I might as well auto-approve agent code runs, meaning that I definitely don't want the setup running on my local machine (or even a VM on the same network).
-
-Turns out that specific setup is so August 2025. These days, the LLM guys allow you to spin up on-demand sandboxes for their coding services. The Claude Android app even has a native "Code" tab now—just select a GitHub repo, give it a prompt, and go do something else with your day.
+**THAT ALL CHANGED** when I read a Hacker News article titled ["Stop Doom Scrolling, Start Doom Coding"](https://news.ycombinator.com/item?id=46517458) which suggested a phone-first vibe-coding setup which can be then used instead of e.g. checking AP News for the latest political takeovers. I'm skipping forward a bit (see the TIL section), but turns out the LLM guys allow you to spin up on-demand sandboxes for their coding services. The Claude Android app even has a native "Code" tab now—just select a GitHub repo, give it a prompt, and go do something else with your day.
 
 So on Friday morning I created an empty GitHub repo, and after a weekend of vibe-Clauding on the go (is this a thing? this should be a thing), I had a fully working app—complete with an AI-generated logo!
 
@@ -54,7 +50,8 @@ And the most surprising thing was that building it was **SO. MUCH. FUN.** The as
 
 ## 💡 Assorted TIL
 
-*   Unsuprisingly, auto-approve completely changes the interaction model with these agents. Instead of closesly supervising every `rm`, the whole thing becomes truly async. Which means that...
+* The blog post actually suggests a local Claude Code + Tailscale + Android terminal, but if I'm already vibe coding, I might as well auto-approve agent code runs, meaning that I definitely don't want the setup running on my local machine (or even a VM on the same network).
+*   Unsuprisingly, auto-approve completely changes the interaction model with these agents. Instead of closesly supervising every `rm`, the whole thing becomes truly async. Which again means that...
 *   Figuring out sandboxes is key to all of this, which is why these new container-first services (Claude Code, Google Jules and OpenAI's Codex) are so great. Let's hope they keep underpricing them!
 *   One suprising side effect of the async manner is that you can either use your newly free time for non-coding tasks (e.g. making dinner), but
 *   You can also use it for performing *other coding tasks* (hello Jevons paradox!). I ended up spending most of my weekend on this.
