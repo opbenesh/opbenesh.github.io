@@ -22,14 +22,17 @@ gh auth login
 
 #### **2. Initialize and Link**
 
-Create the directory structure, initialize Git, and **link it to GitHub** immediately:
+Create the directory structure, initialize Git, and **link it to GitHub**. 
+
+> [!TIP]
+> If you want your blog at the root (e.g., `username.github.io`), name your repository `[your-username].github.io`. Otherwise, name it `my-blog`.
 
 ```bash
 hugo new site my-blog
 cd my-blog
 git init
 
-# This creates the repo on GitHub and sets it as your 'origin' remote
+# Link it to your GitHub account
 gh repo create my-blog --public --source=. --remote=origin
 ```
 
@@ -44,23 +47,37 @@ echo 'theme = "PaperMod"' >> hugo.toml
 
 #### **4. Basic Config**
 
-Update `hugo.toml` with your specific details.
+Update `hugo.toml` with your specific details. 
 
-* **baseURL**: `https://[your-github-username].github.io/`
+> [!CAUTION]
+> **The baseURL must match your repository path.** If your repo is named `my-blog`, your baseURL must be `https://[username].github.io/my-blog/`. If you miss the subpath, your CSS will break and the site will look like raw text.
+
+* **baseURL**: `https://[your-github-username].github.io/my-blog/`
 * **theme**: `PaperMod`
 
-#### **5. Final Push**
+#### **5. Create Your First Post (The "Draft" Trap)**
 
-Now that everything is configured, make your first commit and push to GitHub:
+Hugo won't show anything unless there is content, and it won't publish anything marked as a draft.
+
+```bash
+# Create the file
+hugo new posts/my-first-post.md
+```
+
+Open that file and change `draft: true` to **`draft: false`**. If you forget this, your site will be empty after deployment!
+
+#### **6. Final Push**
+
+Now that everything is configured and you have your first post, push it to GitHub:
 
 ```bash
 git add .
-git commit -m "Initial commit: Setup Hugo with PaperMod"
+git commit -m "Initial commit: Setup Hugo with first post"
 git branch -M main
 git push -u origin main
 ```
 
-#### **6. Deployment Automation (GitHub Actions)**
+#### **7. Deployment Automation (GitHub Actions)**
 
 1. `mkdir -p .github/workflows`
 2. `touch .github/workflows/hugo.yaml`
