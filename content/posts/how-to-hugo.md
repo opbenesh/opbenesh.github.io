@@ -3,7 +3,7 @@ title: "Set Your Hugo + GitHub Blog In 5 Minutes"
 date: 2026-01-11T03:47:48+02:00
 draft: false
 tags: ["hugo", "automation", "ai", "tutorial"]
-summary: "A guide to setting up a Hugo/GitHub blog and automating it with AI agents."
+summary: "I literally did this an hour ago—here is how to set up a Hugo blog with PaperMod and delegate the maintenance to AI agents."
 ---
 
 I literally done this an hour ago, so might as well document my learning for future generations!
@@ -30,7 +30,7 @@ git init
 
 #### **3. Theme Installation**
 
-Pick a hugo theme - I use PaperMode:
+Pick a hugo theme - I use PaperMod:
 
 ```bash
 git submodule add https://github.com/adityatelange/hugo-PaperMod themes/PaperMod
