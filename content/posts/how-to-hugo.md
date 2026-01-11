@@ -24,15 +24,15 @@ gh auth login
 
 Create the directory structure, initialize Git, and **link it to GitHub**. 
 
-> **TIP:** If you want your blog at the root (e.g., `username.github.io`), name your repository `[your-username].github.io`. Otherwise, name it `my-blog`.
+> **TIP:** **To get a "Short URL" (e.g., `https://username.github.io/`):** Name your repository exactly `[your-username].github.io`. This is the professional standard for personal blogs.
 
 ```bash
 hugo new site my-blog
 cd my-blog
 git init
 
-# Link it to your GitHub account
-gh repo create my-blog --public --source=. --remote=origin
+# Create the repo on GitHub (replace [username] with yours)
+gh repo create [your-username].github.io --public --source=. --remote=origin
 ```
 
 #### **3. Theme Installation**
@@ -48,9 +48,9 @@ echo 'theme = "PaperMod"' >> hugo.toml
 
 Update `hugo.toml` with your specific details. 
 
-> **CAUTION:** **The baseURL must match your repository path.** If your repo is named `my-blog`, your baseURL must be `https://[username].github.io/my-blog/`. If you miss the subpath, your CSS will break and the site will look like raw text.
+> **IMPORTANT:** **The baseURL must match your repository name.** If you named your repo `[username].github.io`, your baseURL is simply the root. If you named it `my-blog`, you MUST include the subpath or your CSS will break.
 
-* **baseURL**: `https://[your-github-username].github.io/my-blog/`
+* **baseURL**: `https://[your-username].github.io/`
 * **theme**: `PaperMod`
 
 #### **5. Create Your First Post (The "Draft" Trap)**
