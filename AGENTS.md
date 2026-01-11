@@ -17,9 +17,12 @@
 - **Prompt**: "Check all files in `content/posts/`. Ensure `draft` is set to `false` for completed posts, verify all internal links work, and ensure images are correctly referenced in the `/static` folder. If everything is correct, commit with the message 'Release: [Post Title]' and push to `main`."
 
 ## Project Rules
-- Always use PaperMod-compatible front matter.
-- Tags should be lowercase.
-- Summaries should be under 160 characters for SEO.
-- Run `hugo server` to validate builds before suggesting a push.
+- **Themes & Plugins**: Always use `git submodule add` for external themes/dependencies.
+- **GitHub Tasks**: Prefer the `gh` CLI for repo-level management (linking, actions, creating repos).
+- **Front Matter**: Always use PaperMod-compatible front matter.
+- **Metadata**: Tags must be lowercase; summaries should be < 160 chars for SEO.
+- **Validation**: Run `hugo server` or check for build errors before pushing.
+- **Pre-Push Check**: Ensure `draft` is set to `false` for published posts and all internal links/images are verified.
 
 #### Discoveries
+- **Images**: Prefer Page Bundles (matching the `index.md` location) or the `assets` folder for blog images to support Hugo's image processing, though the `/static` folder remains the default for raw assets.
