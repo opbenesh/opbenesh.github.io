@@ -27,11 +27,12 @@ Create the directory structure, initialize Git, and **link it to GitHub**.
 > **TIP:** **To get a "Short URL" (e.g., `https://username.github.io/`):** Name your repository exactly `[your-username].github.io`. This is the professional standard for personal blogs.
 
 ```bash
-hugo new site my-blog
-cd my-blog
+# Create the site folder (replace [username] with yours)
+hugo new site [your-username].github.io
+cd [your-username].github.io
 git init
 
-# Create the repo on GitHub (replace [username] with yours)
+# Create the repo on GitHub
 gh repo create [your-username].github.io --public --source=. --remote=origin
 ```
 
