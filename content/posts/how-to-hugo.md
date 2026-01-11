@@ -10,9 +10,9 @@ I literally done this an hour ago, so might as well document my learning for fut
 
 #### **1. Core Prerequisites**
 
-Open a terminal, install `hugo`:
+Open a terminal, install `hugo` and the GitHub CLI (`gh`):
 ```bash
-brew install hugo
+brew install hugo gh
 ```
 
 **Set up your Git identity** (so your commits are actually linked to you):
@@ -21,7 +21,10 @@ git config --global user.name "Your Name"
 git config --global user.email "your-email@example.com"
 ```
 
-Also, make sure you have a GitHub account!
+**Authenticate with GitHub**:
+```bash
+gh auth login
+```
 
 #### **2. Initialize the Project**
 
@@ -51,15 +54,16 @@ Update `hugo.toml` with your specific details.
 
 #### **5. Connect to GitHub & Deploy**
 
-1. **Create a new repository** on GitHub (name it `my-blog` or similar). Do not initialize it with a README or License.
-2. **Link and push** your local project:
-   ```bash
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/[your-username]/my-blog.git
-   git push -u origin main
-   ```
+Instead of clicking around the GitHub UI, use the CLI to create the repo and link it instantly:
+
+```bash
+git add .
+git commit -m "Initial commit"
+git branch -M main
+
+# Create the repo on GitHub and push
+gh repo create my-blog --public --source=. --remote=origin --push
+```
 
 #### **6. Deployment Automation (GitHub Actions)**
 
