@@ -52,3 +52,21 @@ theme = "PaperMod"
 [params.assets]
     favicon = "favicon.png"
     apple_touch_icon = "apple-touch-icon.png"
+
+[params]
+    ShowShareButtons = true
+    ShowReadingTime = true
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    author = "Ben Esh"
+
+[related]
+    includeNewer = true
+    threshold = 80
+    toLower = true
+    [[related.indices]]
+        name = "tags"
+        weight = 100
+    [[related.indices]]
+        name = "categories"
+        weight = 80

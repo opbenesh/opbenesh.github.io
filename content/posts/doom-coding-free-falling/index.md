@@ -6,7 +6,17 @@ tags = ['coding', 'spotify', 'ai', 'claude', 'doom-coding', 'python']
 summary = 'How I built a Spotify release tracker on my phone using Claude Code and vibes.'
 ShowToc = true
 TocOpen = true
+author = 'Ben Esh'
+ShowPostNavLinks = true
+
+[cover]
+image = "cover.png"
+alt = "esh-tracker banner"
+caption = "The esh-tracker app logo"
+relative = true
 +++
+
+> **TL;DR:** I built a fully working Spotify release tracker app over a weekend—entirely from my phone—using Claude Code. Here's how, plus tips for async "doom coding" on the go.
 
 Hosting a weekly "new metal" show at [KZRadio](https://www.kzradio.net/shows/esh) (hello, shameless plug) means I have an ever-renewing deadline for finding new stuff to play, and Spotify's own Release Radar misses 70% of the good stuff. I wanted to revitalize my legacy Spotify release tracker project for a while now, but obviously ain't nobody got time for this sort of things these days.
 
@@ -14,14 +24,14 @@ Hosting a weekly "new metal" show at [KZRadio](https://www.kzradio.net/shows/esh
 
 So on Friday morning I created an empty GitHub repo, and after a weekend of vibe-Clauding on the go (is this a thing? this should be a thing), I had a fully working app—complete with an AI-generated logo!
 
-```bash
-$ esh-tracker track --artist="Turnstile" --since 2025-10-01
+<pre style="background:#1a1a1a; color:#0f0; padding:1em; border-radius:8px; font-family:monospace; overflow-x:auto;">
+<code>$ esh-tracker track --artist="Turnstile" --since 2025-10-01
 
   🎵 Turnstile - Dream Logic
      Album: Dream Logic - Single
      Released: 2025-11-14
-     URL: https://open.spotify.com/...
-```
+     URL: https://open.spotify.com/...</code>
+</pre>
 
 And the most surprising thing was that building it was **SO. MUCH. FUN.** The async nature is so perfect for meaningless side-projects like these. I actually vibe-coded at the supermarket and while brushing my teeth. Listen, I love to debate the AI bubble doom scenarios as much as the next guy, but please - you have to try it out. You'll REALLY enjoy it. I promise. I liked it so much I'm writing this blog post at 3am for god's sake.
 
