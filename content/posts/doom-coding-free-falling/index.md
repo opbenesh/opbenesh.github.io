@@ -1,5 +1,5 @@
 ---
-title: "My Unexpected Descent into Doom Coding (or: How I Built a Spotify Tracker App Using My Phone)"
+title: "an unexpected descent into doom coding"
 date: 2026-01-11T02:16:16+02:00
 draft: false
 tags: ["coding", "spotify", "ai", "claude", "doom-coding", "python"]
