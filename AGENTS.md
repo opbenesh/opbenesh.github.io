@@ -23,6 +23,7 @@
 - **Metadata**: Tags must be lowercase; summaries should be < 160 chars for SEO.
 - **Validation**: Run `hugo server` or check for build errors before pushing.
 - **Pre-Push Check**: Ensure `draft` is set to `false` for published posts and all internal links/images are verified.
+- **Post Headers**: Don't use emojis in post headers (use plain text only).
 
 ## Cover Image Design Principles
 
