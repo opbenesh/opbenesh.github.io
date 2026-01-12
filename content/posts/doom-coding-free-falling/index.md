@@ -1,17 +1,16 @@
-+++
-date = '2026-01-11T02:16:16+02:00'
-draft = false
-title = 'My Unexpected Descent into Doom Coding (or: How I Built a Spotify Tracker App Using My Phone)'
-tags = ['coding', 'spotify', 'ai', 'claude', 'doom-coding', 'python']
-summary = 'How I built a Spotify release tracker on my phone using Claude Code and vibes.'
-author = 'Ben Esh'
-ShowPostNavLinks = true
-
-[cover]
-image = "cover.png"
-alt = "esh-tracker banner"
-relative = true
-+++
+---
+title: "My Unexpected Descent into Doom Coding (or: How I Built a Spotify Tracker App Using My Phone)"
+date: 2026-01-11T02:16:16+02:00
+draft: false
+tags: ["coding", "spotify", "ai", "claude", "doom-coding", "python"]
+summary: "How I built a Spotify release tracker on my phone using Claude Code and vibes."
+author: "Ben Esh"
+ShowPostNavLinks: true
+cover:
+  image: "cover.png"
+  alt: "esh-tracker banner"
+  relative: true
+---
 
 > **TL;DR:** I built a fully working Spotify release tracker app over a weekend—entirely from my phone—using Claude Code. Here's how, plus tips for async "doom coding" on the go.
 

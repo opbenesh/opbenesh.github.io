@@ -135,26 +135,31 @@ Replace the bracketed sections with your post-specific details.
 
 ## Front Matter Standards
 
+**Format**: Use YAML format with `---` delimiters (not TOML with `+++`).
+
 ### Required Fields
 ```yaml
+---
 title: "Post Title"
 date: YYYY-MM-DDTHH:MM:SS+TZ
 draft: false
 tags: ["tag1", "tag2"]
 summary: "Brief description under 160 characters for SEO"
 author: "Ben Esh"
+---
 ```
 
 ### Optional Fields
 ```yaml
 ShowPostNavLinks: true  # Show previous/next post navigation
-[cover]
+cover:
   image: "cover.png"
   alt: "Image description"
   relative: true
 ```
 
 ### Metadata Rules
+- **Format**: Always use YAML (delimited by `---`), not TOML (delimited by `+++`)
 - **Tags**: Always lowercase, 3-6 tags per post
 - **Summary**: Under 160 characters for SEO optimization
 - **Title**: Clear and descriptive, avoid clickbait
